@@ -329,7 +329,7 @@
         }
 
         .purpose-list li::before {
-            content: "058";
+            content: "\f058";
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
             position: absolute;
@@ -573,6 +573,22 @@
             background-color: rgba(45, 106, 79, 0.01);
         }
 
+        /* PDF Viewer */
+        .pdf-viewer-container {
+            width: 100%;
+            height: 450px;
+            margin: 15px 0;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         .btn-action {
             display: inline-flex;
             align-items: center;
@@ -688,7 +704,7 @@
                     <img src="" alt="Ảnh chân dung cá nhân" class="avatar-img" id="avatarImg" onerror="this.style.display='none'; document.getElementById('avatarPlaceholder').style.display='flex';">
                 </div>
                 <div class="hero-details">
-                    <h1>Đào Danh Khánh</h1>
+                    <h1>Nguyễn Vũ Nguyên</h1>
                     <p class="sub-title">Chuyên ngành: Ngôn Ngữ Trung Quốc</p>
                     <p>Chào mừng bạn đã ghé thăm trang Portfolio số cá nhân của tôi. Đây là nơi lưu trữ hành trình rèn luyện, nâng cao năng lực ứng dụng công nghệ và các kỹ năng số thực tiễn trong học tập và nghiên cứu mà tôi đã tích lũy trong môn học <strong>"Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo"</strong>.</p>
                     
@@ -697,21 +713,28 @@
                             <i class="fa-solid fa-university"></i>
                             <div>
                                 <div class="info-label">Cơ sở đào tạo</div>
-                                <div class="info-val">Đại học Ngoại ngữ-ĐHQGHN</div>
+                                <div class="info-val">Trường Đại học Ngoại ngữ - ĐHQGHN</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <div>
+                                <div class="info-label">Mã lớp</div>
+                                <div class="info-val">VNU1001_E252057</div>
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fa-solid fa-id-card"></i>
                             <div>
                                 <div class="info-label">Mã sinh viên</div>
-                                <div class="info-val">25041666</div>
+                                <div class="info-val">25011336</div>
                             </div>
                         </div>
                         <div class="info-item">
                             <i class="fa-solid fa-envelope"></i>
                             <div>
                                 <div class="info-label">Email liên hệ</div>
-                                <div class="info-val">dahkhash1510@gmail.com</div>
+                                <div class="info-val">25011336@vnu.edu.vn</div>
                             </div>
                         </div>
                     </div>
@@ -733,7 +756,7 @@
         <section id="projects">
             <div class="projects-header">
                 <h2>Tuyển Tập Các Bài Tập Thành Phần</h2>
-                <p>Tổng hợp chi tiết toàn bộ các kết quả bài tập từ Bài 1 đến Bài 6 trong chương trình học môn Nhập môn Công nghệ số.</p>
+                <p>Tổng hợp chi tiết toàn bộ các kết quả bài tập từ Bài 1 đến Bài 6 trong chương trình học môn Nhập môn Công nghệ số[cite: 1].</p>
             </div>
 
             <div class="projects-grid">
@@ -742,7 +765,7 @@
                     <div class="project-meta">Bài tập 1 (Mục 1.4)</div>
                     <div class="project-body">
                         <h3 class="project-title">Thao Tác Với Tập Tin & Thư Mục</h3>
-                        <p class="project-desc">Trình bày chi tiết cấu trúc thư mục tối ưu của máy tính, quy chuẩn đặt tên tệp khoa học phục vụ học tập lâu dài và hình ảnh minh họa thực tế cấu trúc đã dựng.</p>
+                        <p class="project-desc">Cách thức cấu trúc, tổ chức lưu trữ tài liệu trong ổ đĩa máy tính logic, áp dụng quy chuẩn đặt tên file đồng bộ.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -753,8 +776,8 @@
                 <div class="project-card" onclick="openProject(2)">
                     <div class="project-meta">Bài tập 2 (Mục 2.4)</div>
                     <div class="project-body">
-                        <h3 class="project-title">Tìm Kiếm & Đánh Giá Thông Tin Học Thuật</h3>
-                        <p class="project-desc">Trình bày kết quả nghiên cứu sử dụng các toán tử tìm kiếm nâng cao trên Google Scholar cùng bảng tổng hợp đánh giá chất lượng và độ uy tín của nguồn tin học thuật.</p>
+                        <h3 class="project-title">Tìm Kiếm & Đánh Giá Thông Tin</h3>
+                        <p class="project-desc">Khai thác Google Scholar bằng toán tử tìm kiếm nâng cao, bộ bảng đánh giá độ tin cậy của tài liệu nghiên cứu.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -766,7 +789,7 @@
                     <div class="project-meta">Bài tập 3 (Mục 3.4)</div>
                     <div class="project-body">
                         <h3 class="project-title">Viết Prompt Hiệu Quả Cho Học Tập</h3>
-                        <p class="project-desc">So sánh thực tiễn giữa Prompt cơ bản (ban đầu) và Prompt cải tiến ứng dụng các kỹ thuật thiết kế câu lệnh chuyên sâu, kèm minh chứng phản hồi của AI hỗ trợ dịch thuật ngữ nghĩa Trung Quốc.</p>
+                        <p class="project-desc">Thử nghiệm so sánh kết quả phản hồi của AI trước và sau khi tối ưu hoá cấu trúc câu lệnh dịch thuật chuyên sâu.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -778,7 +801,7 @@
                     <div class="project-meta">Bài tập 4 (Mục 4.4)</div>
                     <div class="project-body">
                         <h3 class="project-title">Công Cụ Hợp Tác Trực Tuyến Nhóm</h3>
-                        <p class="project-desc">Báo cáo minh chứng vận dụng các nền tảng công nghệ quản lý dự án (Trello/Notion), các giải pháp giao tiếp và quy trình phối hợp trực tuyến nhịp nhàng giữa các thành viên nhóm.</p>
+                        <p class="project-desc">Minh chứng kết quả phối hợp đội ngũ trên Notion/Trello, quy trình xây dựng dự án nhóm nhịp nhàng.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -789,8 +812,8 @@
                 <div class="project-card" onclick="openProject(5)">
                     <div class="project-meta">Bài tập 5 (Mục 5.4)</div>
                     <div class="project-body">
-                        <h3 class="project-title">Sử Dụng AI Tạo Sinh Để Sáng Tạo Nội Dung</h3>
-                        <p class="project-desc">Trưng bày các sản phẩm số sáng tạo (hình ảnh đồ họa, video ngắn hoặc tác phẩm văn bản, thơ ca) được tối ưu hóa ý tưởng và sinh từ công nghệ AI thế hệ mới.</p>
+                        <h3 class="project-title">Sáng Tạo Nội Dung Với AI</h3>
+                        <p class="project-desc">Sử dụng AI tạo sinh thiết kế tranh thủy mặc truyền thống và dàn ý nội dung bài viết quảng bá thẩm mỹ cao.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -801,8 +824,8 @@
                 <div class="project-card" onclick="openProject(6)">
                     <div class="project-meta">Bài tập 6 (Mục 6.4)</div>
                     <div class="project-body">
-                        <h3 class="project-title">Sử Dụng AI Có Trách Nhiệm</h3>
-                        <p class="project-desc">Xây dựng và phân tích bộ nguyên tắc cá nhân "Liêm chính học thuật trong thời đại số", định hướng rõ ràng việc kiểm chứng nguồn tin và ranh giới đạo đức khi sử dụng AI.</p>
+                        <h3 class="project-title">Sử Dung AI Có Trách Nhiệm</h3>
+                        <p class="project-desc">Cam kết tính liêm chính học thuật cá nhân thời đại số, phân tích nguyên lý sử dụng AI chuẩn mực đạo đức.</p>
                     </div>
                     <div class="card-footer">
                         <span class="read-more">Chi tiết bài nộp <i class="fa-solid fa-arrow-right"></i></span>
@@ -914,190 +937,182 @@
             }
         });
 
-        // Project detailed contents database matching your assignments
+        // Project detailed contents database matching your assignments[cite: 1]
         const projectDetails = {
             1: {
-                step: "Bước 2: Bài 1 - Bài tập 1 của mục 1.4",
-                title: "Thao tác cơ bản với tập tin và thư mục (Kho lưu trữ Học thuật chuyên nghiệp)",
-                summary: "Bài tập này trình bày cách thiết lập cấu trúc lưu trữ dữ liệu thông minh trên máy tính cá nhân để hỗ trợ học tập ngôn ngữ lâu dài, tối giản hóa việc tìm kiếm tài liệu.",
+                step: "Nhiệm vụ 1: Bài tập thực hành mục 1.4[cite: 1]",
+                title: "Quản lý Tập tin và Thư mục Khoa học",
+                summary: "Cách thức tổ chức và phân loại các tập tin lưu trữ học thuật trong máy tính cá nhân để hỗ trợ tìm kiếm tối ưu[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">1. Quy tắc đặt tên tập tin khoa học (File Naming Conventions)</div>
-                        <p>Để đảm bảo công việc tìm kiếm nhanh chóng và không bị nhầm lẫn tài liệu giữa các phiên bản, tôi thiết lập quy tắc đặt tên thống nhất như sau:</p>
+                        <div class="section-box-title">1. Nguyên tắc đặt tên tập tin (File Naming Rules)</div>
+                        <p>Quy tắc đặt tên file rõ ràng không dấu, kết nối bằng dấu gạch dưới để tối ưu hệ thống tìm kiếm[cite: 1]:</p>
                         <p style="margin: 8px 0; font-family: monospace; background: rgba(0,0,0,0.05); padding: 6px; border-radius: 4px; display: inline-block;">
-                            <strong>[MãMôn]_TenNhiemVu_NgayThang_v[SoPhienBan]</strong>
+                            <strong>[MaMon]_[TenBaiTap]_[NgayThang]_v[Version]</strong>
                         </p>
-                        <p style="margin-top: 10px;">Ví dụ: <code>NMCNS_Baitap1_20260716_v1.pdf</code></p>
+                        <p style="margin-top: 10px;">Ví dụ cụ thể: <code>NMCNS_Baitap1_17072026_v1.pdf</code></p>
                     </div>
 
                     <div class="section-box">
-                        <div class="section-box-title">2. Cấu trúc thư mục tối ưu trong Máy tính (Directory Folder Tree)</div>
-                        <p>Cây thư mục được xây dựng phân cấp khoa học giúp phân tách bài vở các kỳ học một cách rành mạch nhất:</p>
+                        <div class="section-box-title">2. Cây thư mục tổ chức mẫu (Directory Tree)[cite: 1]</div>
                         <div class="folder-tree">
 💻 O_Cung_D (Luu_Tru_Hoc_Tap)
-└── 📁 HK1_Năm1
-    └── 📁 Nhap_Mon_Cong_Nghe_So
-        ├── 📁 Tai_Lieu_Bai_Giang
-        ├── 📁 Bai_Tap_Ca_Nhan
-        │   ├── 📁 Baitap_1_ThuMuc
-        │   ├── 📁 Baitap_2_TimKiem
-        │   └── 📁 Baitap_3_PromptAI
-        └── 📁 Bai_Tap_Nhom
+└── 📁 HK1_Nam_1
+    └── 📁 Nhap_Mon_Cong_Nghe_So_AI
+        ├── 📁 Tai_Lieu_Hoc_Trinh
+        └── 📁 Bai_Tap_Thanh_Phan
+            ├── 📁 Bai1_QuanLyThuMuc
+            ├── 📁 Bai2_TimKiemHocThuat
+            └── 📁 Bai3_PromptVietAI
                         </div>
                     </div>
-
-                    <div class="section-box">
-                        <div class="section-box-title">3. Minh chứng hình ảnh hoạt động thực tế</div>
-                        <p>Dưới đây là liên kết truy cập các hình ảnh chụp màn hình máy tính thực tế về thư mục lưu trữ đã thiết lập hoàn hảo theo cấu trúc trên.</p>
-                    </div>
                 `,
-                assetText: "Tải file PDF báo cáo chi tiết & Ảnh chụp cấu trúc máy tính của tôi",
-                fileLink: "#" // replace with real file/drive link
+                assetText: "Báo cáo thao tác quản lý dữ liệu và hình ảnh minh họa cây thư mục lưu trữ thực tế[cite: 1].",
+                fileLink: "documents/baitap1.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             },
             2: {
-                step: "Bước 2: Bài 2 - Bài tập 2 của mục 2.4",
-                title: "Tìm kiếm và đánh giá thông tin học thuật",
-                summary: "Vận dụng các toán tử tìm kiếm nâng cao (advanced search operators) trên Google Scholar để chọn lọc và tổng hợp các tài liệu học thuật chất lượng cao về đề tài lịch sử/ngôn ngữ.",
+                step: "Nhiệm vụ 2: Bài tập thực hành mục 2.4[cite: 1]",
+                title: "Tìm kiếm và Đánh giá Nguồn tin Học thuật",
+                summary: "Khai thác cơ sở dữ liệu khoa học bằng toán tử tìm kiếm nâng cao trên Google Scholar để xác định các nguồn học thuật uy tín[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">1. Minh họa cú pháp toán tử tìm kiếm nâng cao đã thực hiện</div>
-                        <p>Để lọc bớt tạp âm thông tin và chỉ tìm các tài liệu định dạng PDF chất lượng cao, tôi đã áp dụng cú pháp sau:</p>
+                        <div class="section-box-title">1. Cú pháp toán tử đã sử dụng[cite: 1]</div>
+                        <p>Tìm tài liệu nghiên cứu định dạng PDF có chứa cụm từ khoá học thuật chính xác[cite: 1]:</p>
                         <p style="margin: 10px 0; font-family: monospace; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 4px;">
-                            <strong>"chữ Nôm" AND "thế kỷ 17" filetype:pdf</strong>
+                            <strong>"chu Nom" AND "the ky 17" filetype:pdf</strong>
                         </p>
                     </div>
 
                     <div class="section-box">
-                        <div class="section-box-title">2. Bảng tổng hợp & Đánh giá nguồn tin (Độ uy tín cao)</div>
+                        <div class="section-box-title">2. Bảng tổng hợp kiểm định nguồn dữ liệu[cite: 1]</div>
                         <table class="table-academic">
                             <thead>
                                 <tr>
                                     <th>STT</th>
-                                    <th>Tên tác giả & Tác phẩm</th>
-                                    <th>Cơ sở xuất bản / Journal</th>
-                                    <th>Tiêu chí đánh giá mức độ uy tín</th>
+                                    <th>Tên bài nghiên cứu</th>
+                                    <th>Nhà xuất bản / Tạp chí</th>
+                                    <th>Mức độ tin cậy & Tiêu chí xác thực[cite: 1]</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Nguyễn Văn A, <em>Nghiên cứu văn khắc chữ Nôm...</em></td>
+                                    <td>Nghiên cứu văn khắc chữ Nôm...</td>
                                     <td>Tạp chí Ngôn ngữ học</td>
-                                    <td>Có phản biện đồng nghiệp (Peer-reviewed), nguồn trích dẫn học thuật uy tín.</td>
+                                    <td>Cao - Có phản biện khoa học độc lập và chỉ số trích dẫn rõ ràng[cite: 1].</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Trần Thị B, <em>Giao lưu văn hóa Đông Tây thế kỷ 17</em></td>
+                                    <td>Giao lưu văn hoá Đông Tây...</td>
                                     <td>NXB Đại học Quốc gia</td>
-                                    <td>Được phát hành bởi nhà xuất bản học thuật danh giá, thông tin đối chiếu rõ ràng.</td>
+                                    <td>Cao - Cơ quan học thuật chính thống kiểm duyệt xuất bản uy tín[cite: 1].</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 `,
-                assetText: "Tải File PDF Bảng Đánh Giá Nguồn Học Thuật (Mẫu Chuẩn Harvard)",
-                fileLink: "#"
+                assetText: "Báo cáo chi tiết bảng phân tích các nguồn tài liệu học thuật theo tiêu chuẩn Harvard[cite: 1].",
+                fileLink: "documents/baitap2.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             },
             3: {
-                step: "Bước 2: Bài 3 - Bài tập 2 của mục 3.4",
-                title: "Viết Prompt hiệu quả cho các tác vụ học tập",
-                summary: "Kiểm nghiệm thực tế phương pháp Prompt Engineering bằng cách so sánh hiệu quả đầu ra của AI trước và sau khi được tối ưu hóa cấu trúc câu lệnh.",
+                step: "Nhiệm vụ 3: Bài tập thực hành mục 3.4[cite: 1]",
+                title: "Kỹ thuật Thiết kế Prompt Trợ lý Học tập",
+                summary: "So sánh chất lượng đầu ra của các hệ thống AI tạo sinh trước và sau khi tối ưu hoá cấu trúc câu lệnh[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">1. Prompt Ban Đầu (Chưa tối ưu)</div>
+                        <div class="section-box-title">1. Câu lệnh ban đầu (Prompt thô - Chưa hiệu chỉnh)[cite: 1]</div>
                         <div style="background-color: rgba(239, 68, 68, 0.05); padding: 15px; border-radius: var(--radius-sm); border-left: 3px solid #ef4444; margin-bottom: 15px;">
-                            // <em>"Bổ ngữ khả năng trong tiếng Trung là gì ?."</em>
+                            <em>"Dịch giúp tôi đoạn thơ chữ Hán cổ này sang tiếng Việt."</em>
                         </div>
-                        <p><strong>Kết quả từ AI:</strong> Đúng nhưng chưa đào sâu.</p>
+                        <p><strong>Hạn chế:</strong> AI dịch máy thô cứng, thiếu tính nghệ thuật của thể thơ và không giải nghĩa được các điển tích văn học[cite: 1].</p>
                     </div>
 
                     <div class="section-box">
-                        <div class="section-box-title">2. Prompt Cải Tiến (Áp dụng Kỹ thuật Phân vai & Chỉ định Cấu trúc đầu ra)</div>
+                        <div class="section-box-title">2. Câu lệnh cải tiến (Prompt tối ưu cấu trúc)[cite: 1]</div>
                         <div style="background-color: rgba(16, 185, 129, 0.05); padding: 15px; border-radius: var(--radius-sm); border-left: 3px solid #10b981; margin-bottom: 15px;">
-                            <strong>"Bạn là một giảng viên tiếng Trung tại một trường đại học chuyên về ngoại ngữ. Hãy dùng một phương pháp giảng dạy ngữ pháp thông dụng và dễ hiểu để giảng dạy cho một sinh viên năm nhất vừa học tiếng Trung."</strong>
+                            <strong>"Bạn là một dịch giả Hán-Nôm kỳ cựu. Hãy chuyển ngữ bài thơ cổ sau theo 3 cấu phần: 1. Phiên âm Hán-Việt, 2. Giải nghĩa chi tiết điển tích và các từ khoá, 3. Dịch thơ lục bát/thất ngôn giữ nguyên tính nhạc điệu truyền thống."</strong>
                         </div>
-                        <p><strong>Kết quả cải tiến vượt bậc:</strong> Sâu sắc, có tính phân tích, so sánh đa chiều..</p>
+                        <p><strong>Kết quả vượt bậc:</strong> Nội dung dịch giữ nguyên tính cổ kính, học thuật, đạt hiệu quả hỗ trợ nghiên cứu ngoại ngữ tối ưu[cite: 1].</p>
                     </div>
                 `,
-                assetText: "Tải file so sánh Prompt & Minh chứng lịch sử trò chuyện với AI",
-                fileLink: "#"
+                assetText: "Hồ sơ đối chiếu so sánh kết quả Prompt và ảnh chụp hội thoại với mô hình ngôn ngữ lớn[cite: 1].",
+                fileLink: "documents/baitap3.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             },
             4: {
-                step: "Bước 2: Bài 4 - Bài tập 3 của mục 4.4",
-                title: "Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm",
-                summary: "Minh chứng sử dụng hiệu quả các công cụ số trực tuyến để quản lý dự án nhóm, giao việc và theo dõi tiến độ công việc khoa học.",
+                step: "Nhiệm vụ 4: Bài tập thực hành mục 4.4[cite: 1]",
+                title: "Ứng dụng Nền tảng Cộng tác Nhóm Trực tuyến",
+                summary: "Tổ chức không gian làm việc số hoá để phân bổ nhiệm vụ, quản lý trạng thái tiến độ dự án nhóm hiệu quả[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">1. Nền tảng phân công và quản trị công việc nhóm (Trello / Notion / Sheets)</div>
-                        <p>Nhóm chúng tôi đã chia nhỏ dự án lớn thành các cột danh sách thẻ trạng thái công việc rõ ràng bao gồm: <strong>Cần làm (To Do)</strong>, <strong>Đang thực hiện (In Progress)</strong>, và <strong>Đã hoàn thành (Done)</strong>.</p>
+                        <div class="section-box-title">1. Mô hình Kanban quản lý tiến trình (Notion/Trello)[cite: 1]</div>
+                        <p>Nhóm chúng tôi xây dựng phân chia công việc theo các cột trạng thái linh hoạt: <strong>Cần thực hiện (To Do)</strong>, <strong>Đang làm (In Progress)</strong>, và <strong>Đã kiểm duyệt (Done)</strong>.</p>
                     </div>
 
                     <div class="section-box">
-                        <div class="section-box-title">2. Phương thức phối hợp trực tuyến hiệu quả</div>
+                        <div class="section-box-title">2. Quy trình phối hợp trực tuyến[cite: 1]</div>
                         <ul>
-                            <li>Giao tiếp thảo luận thường trực: <strong>MS Teams / Google Meet</strong> kèm biên bản cuộc họp trực tuyến lưu trữ trên Drive chung.</li>
-                            <li>Đồng biên tập báo cáo: Sử dụng <strong>Google Docs</strong> đồng thời để mọi thành viên được đóng góp ý kiến thời gian thực (Real-time).</li>
+                            <li>Giao tiếp thời gian thực: Họp và lưu trữ biên bản cuộc họp thông qua MS Teams/Google Meet[cite: 1].</li>
+                            <li>Đồng biên soạn tài liệu: Sử dụng Google Workspace để cùng chỉnh sửa nội dung báo cáo đồng bộ[cite: 1].</li>
                         </ul>
                     </div>
                 `,
-                assetText: "Tải file Báo cáo Minh chứng Hoạt động Hợp tác Nhóm trực tuyến",
-                fileLink: "#"
+                assetText: "Báo cáo phân tích minh chứng điều phối dự án nhóm và sơ đồ bảng phân việc số hoá[cite: 1].",
+                fileLink: "documents/baitap4.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             },
             5: {
-                step: "Bước 2: Bài 5 - Bài tập 2 của mục 5.4",
-                title: "Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung",
-                summary: "Ứng dụng AI thiết kế hình ảnh minh họa học tập hoặc lên ý tưởng kịch bản độc đáo, hỗ trợ truyền thông sáng tạo nội dung số có thẩm mỹ cao.",
+                step: "Nhiệm vụ 5: Bài tập thực hành mục 5.4[cite: 1]",
+                title: "Sử dụng Trí tuệ Nhân tạo hỗ trợ Sáng tạo",
+                summary: "Kết hợp sức mạnh của các mô hình AI tạo sinh để hỗ trợ vẽ tranh minh họa và lên cấu trúc ý tưởng kịch bản truyền thông[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">1. Giới thiệu sản phẩm sáng tạo hoàn thiện</div>
-                        <p>Nhờ sự định hướng và tối ưu hóa ý tưởng qua các câu lệnh chi tiết, tôi đã sử dụng AI (như Midjourney/Canva/ChatGPT) để thiết kế Infographic tuyên truyền: "Hiểu đúng về Rác thải điện tử (E-waste).</p>
+                        <div class="section-box-title">1. Sản phẩm nghệ thuật ứng dụng công nghệ[cite: 1]</div>
+                        <p>Tôi đã sử dụng AI vẽ tranh (Midjourney/Bing Creator) để phác hoạ các tác phẩm hội họa phong cách thủy mặc phục vụ nghiên cứu văn hóa cổ trang[cite: 1].</p>
                     </div>
 
                     <div class="section-box">
-                        <div class="section-box-title">2. Chi tiết công cụ áp dụng</div>
+                        <div class="section-box-title">2. Công cụ sử dụng cụ thể[cite: 1]</div>
                         <ul>
-                            <li><strong>Phần lời/kịch bản:</strong> Google Gemini (AI tạo văn bản): Nghiên cứu số liệu, lên dàn ý và viết nội dung..</li>
-                            <li><strong>Phần hình ảnh/đồ họa:</strong> 2.Nano Banana (AI tạo hình ảnh): Tạo các hình ảnh minh họa mang tính ẩn dụ về rác thải công nghệ.li>
+                            <li><strong>Phần ngôn từ:</strong> ChatGPT hỗ trợ lên sơ đồ dàn bài cấu trúc bài viết truyền cảm hứng[cite: 1].</li>
+                            <li><strong>Phần đồ hoạ:</strong> Sử dụng Leonardo.ai tạo lập hệ thống hình ảnh cổ trang chất lượng cao[cite: 1].</li>
                         </ul>
                     </div>
                 `,
-                assetText: "Truy cập Folder sản phẩm Sáng tạo nghệ thuật (Ảnh, Video, Slide)",
-                fileLink: "#"
+                assetText: "Hồ sơ lưu trữ các sản phẩm sáng tạo nghệ thuật được hỗ trợ thiết kế bởi AI[cite: 1].",
+                fileLink: "documents/baitap5.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             },
             6: {
-                step: "Bước 2: Bài 6 - Bài tập 4 của mục 6.4",
-                title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu",
-                summary: "Tài liệu học thuật cốt lõi định hình tư cách nghiên cứu, trình bày bản cam kết nguyên tắc đạo đức cá nhân về tính liêm chính và sự minh bạch nguồn trích dẫn.",
+                step: "Nhiệm vụ 6: Bài tập thực hành mục 6.4[cite: 1]",
+                title: "Nguyên tắc Đạo đức và Sử dụng AI có Trách nhiệm",
+                summary: "Xây dựng bản cam kết liêm chính học thuật cá nhân khi ứng dụng các công cụ trí tuệ nhân tạo trong đại học[cite: 1].",
                 content: `
                     <div class="section-box">
-                        <div class="section-box-title">Bộ Quy tắc 3 KHÔNG - 3 CÓ của bản thân khi ứng dụng AI</div>
-                        <p>Nhằm hướng tới sự xuất sắc về học thuật và tôn trọng sở hữu trí tuệ, tôi cam kết tuân thủ chặt chẽ:</p>
+                        <div class="section-box-title">Hệ thống nguyên tắc 3 KHÔNG - 3 CÓ của sinh viên[cite: 1]</div>
                         <table class="table-academic" style="margin-top: 15px;">
                             <thead>
                                 <tr>
-                                    <th style="background-color: rgba(239, 68, 68, 0.1); color: #ef4444;">Nguyên tắc 3 KHÔNG</th>
-                                    <th style="background-color: rgba(16, 185, 129, 0.1); color: #10b981;">Nguyên tắc 3 CÓ</th>
+                                    <th style="background-color: rgba(239, 68, 68, 0.1); color: #ef4444;">Quy tắc 3 KHÔNG[cite: 1]</th>
+                                    <th style="background-color: rgba(16, 185, 129, 0.1); color: #10b981;">Quy tắc 3 CÓ[cite: 1]</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>KHÔNG sao chép nguyên bản</strong> kết quả AI tạo ra để nộp làm sản phẩm nghiên cứu của riêng mình (Tránh đạo văn AI).</td>
-                                    <td><strong>CÓ kiểm chứng độc lập</strong> tất cả các dữ liệu, trích dẫn, sự kiện lịch sử mà AI cung cấp trước khi đưa vào văn bản chính thức.</td>
+                                    <td><strong>KHÔNG đạo văn AI:</strong> Không sao chép nguyên văn sản phẩm đầu ra của AI làm bài của mình[cite: 1].</td>
+                                    <td><strong>CÓ kiểm chứng:</strong> Luôn rà soát độc lập thông tin lịch sử và dữ liệu AI cung cấp[cite: 1].</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>KHÔNG chia sẻ thông tin mật</strong>, dữ liệu nghiên cứu nội bộ chưa công bố hoặc thông tin cá nhân nhạy cảm lên các máy chủ AI công cộng.</td>
-                                    <td><strong>CÓ công khai minh bạch</strong> việc có sử dụng công cụ AI hỗ trợ trong phần Lời cảm ơn hoặc danh mục tài liệu tham khảo khi nộp bài.</td>
+                                    <td><strong>KHÔNG lộ thông tin:</strong> Tuyệt đối không tải các dữ liệu cá nhân hay tài liệu bảo mật lên AI[cite: 1].</td>
+                                    <td><strong>CÓ công khai:</strong> Minh bạch chú thích sử dụng công cụ AI hỗ trợ trong báo cáo học tập[cite: 1].</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>KHÔNG dùng AI để bóp méo</strong>, làm sai lệch hoặc ngụy tạo tài liệu tham khảo giả mạo nhằm mục đích hợp thức hóa luận điểm cá nhân.</td>
-                                    <td><strong>CÓ tư duy phản biện liên tục</strong>, luôn giữ vai trò người dẫn dắt kiểm soát nội dung chính, coi AI là người trợ lý chứ không phải bộ não thay thế.</td>
+                                    <td><strong>KHÔNG lạm dụng:</strong> Không dùng AI chế tạo dữ liệu tham khảo ảo để chứng minh luận điểm[cite: 1].</td>
+                                    <td><strong>CÓ tư duy độc lập:</strong> Giữ vững lập trường và sử dụng AI như một trợ lý thông minh[cite: 1].</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 `,
-                assetText: "Xem Bản Cam Kết Liêm Chính Học Thuật Toàn Diện (PDF)",
-                fileLink: "#"
+                assetText: "Bản cam kết liêm chính học thuật về đạo đức sử dụng AI định dạng PDF ký tên cá nhân[cite: 1].",
+                fileLink: "documents/baitap6.pdf" // Thay đổi đường dẫn trực tiếp tới file PDF của bạn tại đây
             }
         };
 
@@ -1115,6 +1130,14 @@
                 </p>
                 ${data.content}
                 
+                <!-- PDF Viewer tích hợp trực tiếp, không qua link web khác -->
+                <div class="section-box">
+                    <div class="section-box-title"><i class="fa-solid fa-eye"></i> Xem trực tiếp tài liệu minh chứng (PDF)</div>
+                    <div class="pdf-viewer-container">
+                        <iframe class="pdf-viewer" src="${data.fileLink}"></iframe>
+                    </div>
+                </div>
+
                 <div class="asset-box">
                     <p style="font-size: 0.95rem; font-weight: 500; color: var(--text-color); margin-bottom: 10px;">
                         <i class="fa-solid fa-file-pdf" style="color: #ef4444; font-size: 1.5rem; margin-right: 8px; vertical-align: middle;"></i> 
@@ -1123,8 +1146,8 @@
                     <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
                         ${data.assetText}
                     </p>
-                    <a href="https://github.com/Danh5ovcl/porfolio_daodanhkhanh/blob/main/bt6.pdf" target="_blank" class="btn-action">
-                        <i class="fa-solid fa-download"></i> Tải về / Xem tài liệu minh chứng
+                    <a href="${data.fileLink}" download class="btn-action">
+                        <i class="fa-solid fa-download"></i> Tải về tệp tin nguồn
                     </a>
                 </div>
             `;
@@ -1153,3 +1176,5 @@
     </script>
 </body>
 </html>
+                  
+           
